@@ -1,0 +1,32 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    background-color: var(--header-color);
+    padding: 2em;
+}
+header .title {
+    font-size: 28px;
+}
+main {
+    display: flex;
+    flex-grow: 1;
+}
+.left-bar {
+    width: 20em;
+    background-color: var(--sidebar-color);
+}
+.map-container {
+    flex-grow: 1;
+}
+footer {
+    display: flex;
+    background-color: var(--header-color);
+    padding: 1em;
+    justify-content: space-between;
+}
+
+
+
