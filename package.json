@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~11.2.5",
     "@angular/router": "~11.2.5",
     "ol": "^6.5.0",
+    "ol-ext": "^4.0.2",
+    "proj4": "^2.8.0",
     "roboto-fontface": "^0.10.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import Map from 'ol/Map';
+// import Map from 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
+import { Map } from './ol/map';
 
 @Component({
   selector: 'app-root',
@@ -14,16 +15,6 @@ export class AppComponent implements OnInit {
   map: Map;
 
   ngOnInit(): void {
-    this.map = new Map({
-      view: new View({
-        center: [0, 0],
-        zoom: 1,
-      }),
-      layers: [
-        new TileLayer({
-          source: new OSM(),
-        }),
-      ]
-    });
+    this.map = new Map().olMap;
   }
 }
