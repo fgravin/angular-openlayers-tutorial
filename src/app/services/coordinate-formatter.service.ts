@@ -5,7 +5,11 @@ import { DecimalPipe } from '@angular/common';
   providedIn: 'root',
 })
 export class CoordinateFormatterService {
-  constructor(private decimalPipe: DecimalPipe) {}
+  private decimalPipe: DecimalPipe;
+
+  constructor() {
+    this.decimalPipe = new DecimalPipe('en-US');
+  }
 
   numberCoordinates(
     coordinates: number[],
